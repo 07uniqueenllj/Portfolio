@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="./My Portfolio_files/style.css">
+    <link href="./My Portfolio_files/_   boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <a href="http://127.0.0.1:5500/index.html#home" class="logo">Shovie
+        <span>Delmita</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index.html#home" class="active">Home</a>
+            <a hef="#About">About</a>
+            <a hef="#Projects">Projects</a>
+            <a hef="#Contact">Contact</a>
+
+        </nav>
+        </div></header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Shovie</span></h1>
+                <h3 class="text-animation">I'm a <span></span></h3>
+                <p> just starting my journey in the world of coding and web design. I’ve recently begun learning HTML, CSS, and JavaScript, and I’m passionate about creating simple, clean, and responsive websites.Though I’m just getting started, I’ve already begun building a few personal projects to practice my skills and bring ideas to life. I’m excited to continue learning and improving, and I’m eager to take on new challenges as I grow in this field.
+                    Feel free to explore my projects below, and if you have any questions or would like to collaborate, don’t hesitate to reach out. I’m always excited to connect with others and continue growing as a developer!</p>
+                
+                </div>
+                    <div class="home-img">
+                     <img src="./My Portfolio_files/image.jpg" alt=""> 
+            </div>
+        </section>
+            
+
+        <script src="./My Portfolio_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
